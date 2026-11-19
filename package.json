@@ -1,0 +1,19 @@
+{
+  "name": "loadsecure-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:init": "node scripts/init-db.mjs",
+    "db:generate": "drizzle-kit generate",
+    "test:server": "node --test server/server.test.mjs",
+    "start": "node server/dev-server.mjs",
+    "server": "node server/dev-server.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "drizzle-orm": "0.45.2"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.10"
+  }
+}
